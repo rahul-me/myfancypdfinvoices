@@ -47,6 +47,25 @@
         </dependency>
         <!-- end::springContextDependency[] -->
         <!-- tag::springMvcDependency[] -->
+<!--        THIS IS INCLUDED FOR SPRING WEB MVC-->
+<!--       Read-5
+You already added Spring framework to your project, but for now, you are only using Spring’s ApplicationContext for
+dependency injection, inside your MyFancyPdfInvoicesServlet.
+
+The Servlet itself is pretty much unchanged, in that you are doing a fair amount of request URI parsing (if-else)
+and handling the JSON conversions yourself.
+Wouldn’t it be nicer if Spring could handle that for you as well?
+
+That’s where Spring MVC comes into the picture.
+It is Spring’s very own web framework, which builds on top of the basics you learned in the previous module and is still
+considered to be part of core Spring framework (and NOT Spring Boot).
+
+In this module you are going to learn:
+How to setup Spring WebMVC.
+How to write REST Services with Spring WebMVC.
+Further topics, like validating REST calls etc.
+
+ -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
